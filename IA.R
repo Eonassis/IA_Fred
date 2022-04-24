@@ -15,15 +15,20 @@ BTC_BRL_BIN <- read.csv("BTC_BRL Binance Dados Históricos.csv")
 #print data
 print(BTC_BRL_BIN)
 
-#read csv FX
-BTC_BRL_FX <- read.csv("BTC_USD Bitfinex Dados Históricos.csv")
+#read csv BIN
+BTC_USD_BIN <- read.csv("BTC_USD Binance Dados Históricos.csv")
 #print data
-print(BTC_BRL_FX)
+print(BTC_USD_BIN)
+
+#read csv FX
+BTC_USD_FX <- read.csv("BTC_USD Bitfinex Dados Históricos.csv")
+#print data
+print(BTC_USD_FX)
 
 #read csv FTX
-BTC_BRL_FTX <- read.csv("BTC_USD FTX Dados Históricos.csv")
+BTC_USD_FTX <- read.csv("BTC_USD FTX Dados Históricos.csv")
 #print data
-print(BTC_BRL_FTX)
+print(BTC_USD_FTX)
 
 #read csv EUR_BRL
 EUR_BRL <- read.csv("EUR_BRL Dados Históricos.csv")
@@ -35,11 +40,12 @@ USD_BRL <- read.csv("USD_BRL Dados Históricos.csv")
 #print data
 print(USD_BRL)
 
-#verify is NA
+#verify is NA ?
 any(is.na(BTC_BRL_MB))
 any(is.na(BTC_BRL_BIN))
-any(is.na(BTC_BRL_FX))
-any(is.na(BTC_BRL_FTX))
+any(is.na(BTC_USD_BIN))
+any(is.na(BTC_USD_FX))
+any(is.na(BTC_USD_FTX))
 any(is.na(EUR_BRL))
 any(is.na(USD_BRL))
 
